@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Color Guessing Game
 
-## Getting Started
+## 概要
 
-First, run the development server:
+Color Guessing Game は、プレイヤーのカラーコード認識能力をテストする楽しいウェブアプリケーションです。ランダムに生成された色を見て、正しい Hex コードを選択するゲームです。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 機能
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 4 つの難易度モード: Beginner、Intermediate、Advanced、Master
+- ランダムに生成される色と Hex コードオプション
+- 即時フィードバック機能
+- シンプルで直感的なユーザーインターフェース
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 技術スタック
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
 
-## Learn More
+## 使用方法
 
-To learn more about Next.js, take a look at the following resources:
+1. ゲームを開始するには、難易度を選択します。
+2. 表示された色を観察し、提示されたオプションから正しい Hex コードを選択します。
+3. 選択後、正解か不正解かのフィードバックが表示されます。
+4. 「Play Again」ボタンを押して新しいラウンドを開始できます。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## カスタマイズ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `generateRandomColor` 関数を修正することで、色の生成方法をカスタマイズできます。
+- Tailwind CSS クラスを編集することで、UI のスタイルを変更できます。
 
-## Deploy on Vercel
+## 貢献
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+プルリクエストは大歓迎です。大きな変更を行う場合は、まずイシューを開いて議論してください。
