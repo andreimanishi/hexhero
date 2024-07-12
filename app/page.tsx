@@ -63,7 +63,7 @@ const ColorGuessingGame = () => {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <h1 className="text-4xl font-bold mb-8">Color Guessing Game</h1>
-        <div className="space-x-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {Object.keys(gameModeOptions).map((mode) => (
             <Button
               key={mode}
@@ -92,6 +92,21 @@ const ColorGuessingGame = () => {
         <Button onClick={resetGame} className="w-48">
           Play Again
         </Button>
+        <div className="h-28" />
+        Reference
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          {options.map((color, index) => (
+            <Button
+              key={index}
+              style={{ backgroundColor: color }}
+              onClick={() => handleGuess(color)}
+              className="w-32 h-12 text-black"
+              disabled={gameOver}
+            >
+              {color}
+            </Button>
+          ))}
+        </div>
       </div>
     );
   }
